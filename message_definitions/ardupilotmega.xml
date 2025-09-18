@@ -2057,5 +2057,16 @@
       <field type="uint16_t[4]" name="rpm" units="rpm">RPM (eRPM).</field>
       <field type="uint16_t[4]" name="count">count of telemetry packets received (wraps at 65535).</field>
     </message>
+    <!-- Raymond 项目自定义消息：聚合溶氧、避障距离、水深/水温 -->
+    <message id="11045" name="RAYMOND_SENSOR_MSG">
+      <description>raymond传感器数据：溶氧数据、当前障碍物距离、水深与水温</description>
+      <field type="uint32_t" name="time_boot_ms">自系统启动起的时间（毫秒）</field>
+      <field type="float" name="o2_saturation">溶解氧饱和度（%）</field>
+      <field type="float" name="o2_concentration">溶解氧浓度（mg/L）</field>
+      <field type="float" name="front_obstacle_distance">前避障距离(米)</field>
+      <field type="float" name="back_obstacle_distance">后避障距离(米)</field>
+      <field type="float" name="water_depth">水深(米)</field>
+      <field type="float" name="water_temperature">水温(摄氏度)</field>
+    </message>
   </messages>
 </mavlink>
