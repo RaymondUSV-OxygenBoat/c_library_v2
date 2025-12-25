@@ -2067,6 +2067,8 @@
       <field type="float" name="back_obstacle_distance">后避障距离(米)</field>
       <field type="float" name="water_depth">水深(米)</field>
       <field type="float" name="water_temperature">水温(摄氏度)</field>
+	  <field type="float" name="remaining_fodder">剩余饵料</field>
+	  <field type="float" name="remaining_potion">剩余药水</field>
     </message>
   </messages>
 </mavlink>
